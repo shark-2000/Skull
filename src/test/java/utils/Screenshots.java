@@ -25,13 +25,13 @@ public class Screenshots {
 		
 	} 
 	// new after method
-	/*
-	 * public void afterMethod(ITestResult testresult) throws IOException { if
-	 * (testresult.getStatus() == ITestResult.FAILURE) { String path =
-	 * Screenshots.takeScreenshot(driver, testresult.getName()); String imagePath =
-	 * test.addScreenCapture(path); test.log(LogStatus.FAIL,
-	 * "Verify Welcome Text Failed", imagePath);} }
-	 */
+	
+//	  public void afterMethod(ITestResult testresult) throws IOException { if
+//	  (testresult.getStatus() == ITestResult.FAILURE) { String path =
+//	  Screenshots.takeScreenshot(driver, testresult.getName()); String imagePath =
+//	  test.addScreenCapture(path); test.log(LogStatus.FAIL,
+//	  "Verify Welcome Text Failed", imagePath);} }
+//	 
 	//Old After method
 	public void Screenshot(WebDriver driver,ITestResult res) throws IOException {
 		if(res.getStatus()==ITestResult.FAILURE) {
